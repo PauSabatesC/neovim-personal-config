@@ -29,11 +29,17 @@ set nocompatible
 
 set clipboard+=unnamedplus "makes the yanked lines be in the clipboard too. so 'y' is yanked and copied.
 
+
+nnoremap i :noh<cr>i
+
+
+
+
 call plug#begin('~/.config/nvim')  
   Plug 'arcticicestudio/nord-vim'
   
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-python', 'coc-tslint', 'coc-prettier', 'coc-emmet', 'coc-yaml', 'coc-docker']
+  let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-jedi', 'coc-tslint', 'coc-prettier', 'coc-emmet', 'coc-yaml', 'coc-docker']
   
   Plug 'hashivim/vim-terraform'
   let g:terraform_fmt_on_save=1
@@ -54,6 +60,7 @@ call plug#begin('~/.config/nvim')
   "Plug 'ryanoasis/vim-devicons' "icons in files
 
   Plug 'junegunn/goyo.vim' "distraction free, run :Goyo
+
 
 call plug#end()
 
