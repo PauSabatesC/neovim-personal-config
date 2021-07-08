@@ -20,8 +20,7 @@ bash nodesource_setup.sh
 apt install -y nodejs
 
 echo 'Installing Terraform language server'
-DEBIAN_FRONTEND=noninteractive
-apt install -y lsb-core
+DEBIAN_FRONTEND=noninteractive | apt install -y lsb-core
 apt install -y software-properties-common
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
