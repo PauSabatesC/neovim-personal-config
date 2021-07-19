@@ -26,6 +26,8 @@ curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 apt-get update && apt-get install -y terraform-ls
 
+pip3 install jedi-language-server
+
 echo 'alias vim='nvim'' >> ~/.bashrc
 
 echo 'Now run :PlugInstall to install plugins and done!'
