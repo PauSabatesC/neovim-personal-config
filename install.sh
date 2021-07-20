@@ -28,6 +28,9 @@ sudo apt-get update && sudo apt-get install -y terraform-ls
 
 sudo pip3 install jedi-language-server
 
+sudo apt install -y fzf
+sudo apt install -y ripgrep
+
 echo 'alias vim='nvim'' >> ~/.bashrc
 
 echo 'Now run :PlugInstall to install plugins and done!'
