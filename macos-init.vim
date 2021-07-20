@@ -30,8 +30,14 @@ set nocompatible
 
 set clipboard+=unnamedplus "makes the yanked lines be in the clipboard too. so 'y' is yanked and copied.
 
-nnoremap i :noh<cr>i
 
+
+"Hightlith disable when going insert mode.
+nnoremap i :noh<cr>i
+"<leader-p> to search and open a file
+nnoremap <silent> <c-p> :Files<CR>
+"<leader-f> to search words in all files
+nnoremap <silent> <c-f> :Rg<CR>
 
 
 
@@ -45,8 +51,9 @@ call plug#begin('~/.config/nvim')
   let g:terraform_fmt_on_save=1
   let g:terraform_align=1
 
-  Plug 'junegunn/fzf'
-	
+	Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  
   Plug 'itchyny/lightline.vim'
   Plug 'mhinz/vim-signify'
   Plug 'sheerun/vim-polyglot'
@@ -65,3 +72,4 @@ call plug#begin('~/.config/nvim')
 call plug#end()
 
 " colorscheme nord
+
