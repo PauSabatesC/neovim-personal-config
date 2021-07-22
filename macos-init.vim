@@ -11,7 +11,8 @@ set nowrap  " No dividir la línea si es muy larga
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set mouse=
+" set mouse=
+set mouse=a
 set shiftround
 set expandtab  " Insertar espacios en lugar de <Tab>s
 
@@ -63,6 +64,7 @@ call plug#begin('~/.config/nvim')
   " Exit Vim if NERDTree is the only window left.
   autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
   map <C-n> :NERDTreeToggle<CR>
+  let NERDTreeShowHidden=1
   
   "Plug 'ryanoasis/vim-devicons' "icons in files
 
