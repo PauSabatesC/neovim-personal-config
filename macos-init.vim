@@ -69,7 +69,8 @@ call plug#begin('~/.config/nvim')
   "Plug 'ryanoasis/vim-devicons' "icons in files
 
   Plug 'junegunn/goyo.vim' "distraction free, run :Goyo
-
+  
+  Plug 'chaoren/vim-wordmotion'
 
 call plug#end()
 
