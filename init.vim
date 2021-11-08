@@ -68,6 +68,7 @@ call plug#begin('~/.config/nvim')
 
   Plug 'junegunn/goyo.vim' "distraction free, run :Goyo
 
+  Plug 'chaoren/vim-wordmotion'
 
 call plug#end()
 
