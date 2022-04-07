@@ -70,6 +70,9 @@ call plug#begin('~/.config/nvim')
 
   Plug 'chaoren/vim-wordmotion'
 
+  Plug 'fatih/vim-go'
+  let g:go_def_mapping_enabled = 0
+
 call plug#end()
 
 colorscheme nord

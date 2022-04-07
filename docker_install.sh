@@ -35,3 +35,5 @@ echo 'alias vim='nvim'' >> ~/.bashrc
 
 echo 'Now run :PlugInstall to install plugins and done!'
 echo 'Now run :CocInstall coc-tsserver to install typescript language server!'
+echo 'Run also :CocInstall and then :CocInstallBinaries'
+
