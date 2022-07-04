@@ -41,7 +41,7 @@ nnoremap <silent> <c-f> :Rg<CR>
 
 
 call plug#begin('~/.config/nvim')  
-  Plug 'arcticicestudio/nord-vim'
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-jedi', 'coc-tslint', 'coc-prettier', 'coc-emmet', 'coc-yaml', 'coc-docker']
@@ -75,4 +75,4 @@ call plug#begin('~/.config/nvim')
 
 call plug#end()
 
-colorscheme nord
+colorscheme tokyonight
