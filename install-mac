@@ -1,0 +1,33 @@
+1. configurar terminal iterm2 with p10k configure
+
+2. Install neovim
+brew install --HEAD tree-sitter
+brew install --HEAD luajit
+brew install --HEAD neovim\n
+
+3. Install plug
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \\n    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+4. Copy init file from repo
+mkdir ~/.config/nvim
+vim ~/.config/nvim/init.vim
+vim ~/.config/nvim/coc-settings.json
+
+5. Install node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install node
+nvm use node
+
+6. Install fzf y repgrip
+brew install fzf
+brew install ripgrep
+
+7. Install terraform-ls
+brew install terraform-ls
+
+8. Ejecutar plugInstall
+open vim and :PlugInstall
