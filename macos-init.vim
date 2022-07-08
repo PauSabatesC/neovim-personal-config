@@ -43,7 +43,7 @@ nnoremap <silent> <c-f> :Rg<CR>
 
 
 call plug#begin('~/.config/nvim')  
-  Plug 'arcticicestudio/nord-vim'
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-jedi', 'coc-tslint', 'coc-prettier', 'coc-emmet', 'coc-yaml', 'coc-docker']
@@ -52,7 +52,7 @@ call plug#begin('~/.config/nvim')
   let g:terraform_fmt_on_save=1
   let g:terraform_align=1
 
-	Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf.vim'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   
   Plug 'itchyny/lightline.vim'
@@ -71,8 +71,10 @@ call plug#begin('~/.config/nvim')
   Plug 'junegunn/goyo.vim' "distraction free, run :Goyo
   
   Plug 'chaoren/vim-wordmotion'
+  
+  Plug 'fatih/vim-go'
+  let g:go_def_mapping_enabled = 0
 
 call plug#end()
 
-" colorscheme nord
-
+colorscheme tokyonight
